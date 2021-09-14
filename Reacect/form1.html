@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var data=document.forms['document'];
+            if(data['aaquib'].value == "") {
+                window.alert("Please enter your name");
+                aaquib.focus();
+                return false;
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+    <div style="text-align:center;">
+        <form action="#" name="" onsubmit="return validate()" method="post">
+            <h1 >login form</h1>
+            <br>
+            <div>
+            <label for="">First name</label>
+            <input type="text" name="aaquib" id="" placeholder="First name">
+            </div>
+            <br>
+            <div>
+            <label for="">Password</label>
+            <input type="password" name="" id="" placeholder="enter your password">
+            </div>
+            <br>
+            <div>
+            <label for="">telephone no</label>
+            <input type="number" name="" id="" placeholder="Enter phone number">
+            </div>
+            <div>
+                <select name="" id="">
+                    <label for="">select option</label>
+                    <option value="">javascript</option>
+                    <option value="">java</option>
+                    <option value="">css</option>
+                    <option value="">html</option>
+                </select>
+                <br>
+                <input type="submit" name="submit" id="" value="submit">
+        </form>
+    </div>
+</body>
+</html>
